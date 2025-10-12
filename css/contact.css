@@ -1,0 +1,16 @@
+#contact {
+  border-left: 3px solid #d2b48c;
+  padding-left: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+#contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#contact h2:hover {
+  color: #8b6b4c;
+}
