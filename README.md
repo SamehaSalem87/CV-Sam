@@ -38,7 +38,7 @@ CV-Sam/
    git clone https://github.com/SamehaSalem87/CV-Sam.git
 3. Start a local server (e.g., VS Code extension “Live Server”)
 
-4. Navigate to http://127.0.0.1:5500/ (or the port your server uses)
+4. Navigate to https://samehasalem87.github.io/CV-Sam/ (or the port your server uses)
 
 5. Browse the sections loading dynamically in the main content area
 
