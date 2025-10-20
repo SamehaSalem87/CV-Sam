@@ -41,13 +41,3 @@ CV-Sam/
 4. Navigate to https://samehasalem87.github.io/CV-Sam/ (or the port your server uses)
 
 5. Browse the sections loading dynamically in the main content area
-
-## Key Features
-
-Each section (about.html, skills.html, …) is loaded dynamically into the <main> tag — clean and scalable.
-
-Easy to add new sections by simply creating a new .html file in sections/ and adding its name into the JavaScript array.
-
-Professional layout tailored for a junior software developer’s portfolio.
-
-
