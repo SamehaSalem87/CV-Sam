@@ -41,7 +41,7 @@ aside {
 
 aside img {
   width: 100%;
-  max-width: 150px;  /* متجاوب */
+  max-width: 150px;  
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -197,6 +197,7 @@ footer a:hover {
     padding-left: 10px;
   }
 }
+
 
 
 
