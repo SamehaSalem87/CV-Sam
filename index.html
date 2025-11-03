@@ -4,71 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lebenslauf – Sameha Salem</title>
+  <!-- Google Schriftart Lato einbinden -->
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Globales CSS einbinden -->
   <link rel="stylesheet" href="css/global.css">
 </head>
-
 <body>
+  <!-- ---------- Seitenleiste / Profilbereich ---------- -->
   <aside>
-    <h1>Sameha Salem </h1>
+    <h1>Sameha Salem</h1>
     <h4>Fachinformatikerin – Anwendungsentwicklung</h4>
     <img src="img/sam-bild.jpg" alt="Sameha-bild">
-    
-    <p><strong>Engagierte Junior-Softwareentwicklerin
- mit hoher Lernbereitschaft und
- Flexibilität. 
-Ich habe praktische Erfahrungen in
- einem dynamischen Arbeitsumfeld
- gesammelt und zeige stets
- Belastbarkeit, Teamgeist und
- lösungsorientiertes Denken – auch
- unter Druck. 
-Ich suche nach neuen
- Herausforderungen, um meine
- Fähigkeiten weiterzuentwickeln und
- zum Erfolg innovativer Projekte
- beizutragen.</strong></p>
 
- <h2>Kenntnisse</h2><li>Arabisch: Muttersprache</li>
-    <li>Microsoft Office </li>
-    <li>Canva</li>
-    <li>Projektmanagement</li>
-    <li>Datenbank</li>
-    <li>HTML/CSS/JavaScript</li>
-    <li>Git/GitHub</li>
-    <li>Python</li>
-    <li>SQL</li>
-    
+    <!-- Persönliche Beschreibung -->
+    <p><strong>
+    Engagierte Junior-Softwareentwicklerin mit hoher Lernbereitschaft und Flexibilität. Ich habe praktische Erfahrungen in einem dynamischen Arbeitsumfeld gesammelt und zeige stets Belastbarkeit, Teamgeist und lösungsorientiertes Denken – auch unter Druck. Ich suche nach neuen Herausforderungen, um meine Fähigkeiten weiterzuentwickeln und zum Erfolg innovativer Projekte beizutragen.
+    </strong></p>
 
+    <!-- ---------- Kenntnisse ---------- -->
+    <h2>Kenntnisse</h2>
+    <ul>
+      <li>Arabisch: Muttersprache</li>
+      <li>Microsoft Office</li>
+      <li>Canva</li>
+      <li>Projektmanagement</li>
+      <li>Datenbank</li>
+      <li>HTML/CSS/JavaScript</li>
+      <li>Git/GitHub</li>
+      <li>Python</li>
+      <li>SQL</li>
+    </ul>
 
- <h1>Sprachen</h1>
-    <li>Arabisch: Muttersprache</li>
-    <li>Deutsch:  B2</li>
-    <li>Englisch: A2</li>
-
-  
-   
-   
+    <!-- ---------- Sprachen ---------- -->
+    <h2>Sprachen</h2>
+    <ul>
+      <li>Arabisch: Muttersprache</li>
+      <li>Deutsch: B2</li>
+      <li>Englisch: A2</li>
+    </ul>
   </aside>
 
-   <main id="main-content"></main>
+  <!-- ---------- Hauptinhalt ---------- -->
+  <main id="main-content"></main>
+
+  <!-- ---------- Footer ---------- -->
   <footer>
-  <p>© 2025 Sameha Salem. Alle Rechte vorbehalten.</p>
-  <p> 
-     GitHub: <a href="https://github.com/SamehaSalem87" target="_blank">github.com/yourusername</a>
-  </p>
-</footer>
+    <p>© 2025 Sameha Salem. Alle Rechte vorbehalten.</p>
+    <p>GitHub: <a href="https://github.com/SamehaSalem87" target="_blank">github.com/SamehaSalem87</a></p>
+  </footer>
 
-<script>
-  const sections = [  'contact',  'projects', 'education' , 'courses'];
-  const main = document.getElementById('main-content');
+  <!-- ---------- Dynamisches Laden der Sektionen ---------- -->
+  <script>
+    const sections = ['contact', 'projects', 'education', 'courses'];
+    const main = document.getElementById('main-content');
 
-  sections.forEach(section => {
-    fetch(`sections/${section}.html`)
-      .then(response => response.text())
-      .then(data => main.insertAdjacentHTML('beforeend', data))
-      .catch(err => console.error(`Fehler beim Laden von ${section}:`, err));
-  });
-</script>
+    sections.forEach(section => {
+      fetch(`sections/${section}.html`)
+        .then(response => response.text())
+        .then(data => main.insertAdjacentHTML('beforeend', data))
+        .catch(err => console.error(`Fehler beim Laden von ${section}:`, err));
+    });
+  </script>
 </body>
 </html>
