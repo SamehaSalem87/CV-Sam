@@ -1,8 +1,8 @@
 /* =========================
-   Globale Styles - global.css
+   Global Styles - global.css
 ========================= */
 
-/* ---------- Farben / Farbvariablen ---------- */
+/* ---------- Farben / Farbenvariablen ---------- */
 :root {
   --beige: #f5efe6;
   --brown: #8b6b4c;
@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
 }
 
-/* ---------- Seitenleiste / Profilbereich ---------- */
+/* ---------- Aside / Sidebar ---------- */
 aside {
   background-color: var(--brown);
   color: #fff;
@@ -41,7 +41,7 @@ aside {
 
 aside img {
   width: 100%;
-  max-width: 250px;  /* Bildgröße responsive */
+  max-width: 150px;  /* متجاوب */
   height: auto;
   border-radius: 50%;
   object-fit: cover;
@@ -74,7 +74,6 @@ aside h2 {
   text-align: center;
 }
 
-/* ---------- Listen ---------- */
 ul {
   list-style: none;
   padding-left: 0;
@@ -90,7 +89,7 @@ ul li::before {
   font-weight: bold;
 }
 
-/* ---------- Hauptinhalt ---------- */
+/* ---------- Main Container ---------- */
 main {
   flex: 1;
   padding: 30px 40px;
@@ -99,7 +98,7 @@ main {
   gap: 30px;
 }
 
-/* ---------- Sektionen ---------- */
+/* ---------- Sections General ---------- */
 section {
   border-left: 3px solid var(--light-brown);
   padding-left: 20px;
@@ -144,10 +143,10 @@ footer a:hover {
   color: var(--light-brown);
 }
 
-/* ---------- Responsive für Mobile ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   body {
-    flex-direction: column; /* Sidebar über Hauptinhalt */
+    flex-direction: column;
   }
 
   aside {
@@ -170,7 +169,7 @@ footer a:hover {
   }
 }
 
-/* ---------- Druckversion ---------- */
+/* ---------- Print Styles ---------- */
 @media print {
   body {
     display: block;
@@ -190,7 +189,7 @@ footer a:hover {
   }
 
   footer {
-    display: none; /* Footer nicht drucken */
+    display: none;
   }
 
   section {
@@ -198,3 +197,6 @@ footer a:hover {
     padding-left: 10px;
   }
 }
+
+
+
